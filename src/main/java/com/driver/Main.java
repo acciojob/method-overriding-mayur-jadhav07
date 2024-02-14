@@ -8,7 +8,8 @@ public class Main {
         System.out.println(resultFromA);
 
         // Task 5: Call the overridden method from obj of class B
-        String resultFromB = objB.meth();
+        B obj = new B();
+        String resultFromB = obj.meth();
         System.out.println(resultFromB);
     }
 
