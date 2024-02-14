@@ -11,20 +11,22 @@ public class Main {
         String resultFromB = objB.meth();
         System.out.println(resultFromB);
     }
+
+    // Task 1: Create class A with method meth
+    public static class A {
+        public String meth() {
+            return "Invoking method from class A";
+        }
+    }
+
+    // Task 2: Create class B which extends class A
+    public static class B extends A {
+        // Task 4: Override method meth in class B
+        @Override
+        public String meth() {
+            return "Method is overridden in Extended class B";
+        }
+    }
+
 }
 
-// Task 1: Create class A with method meth
-class A {
-    public String meth() {
-        return "Invoking method from class A";
-    }
-}
-
-// Task 2: Create class B which extends class A
-class B extends A {
-    // Task 4: Override method meth in class B
-    @Override
-    public String meth() {
-        return "Method is overridden in Extended class B";
-    }
-}
