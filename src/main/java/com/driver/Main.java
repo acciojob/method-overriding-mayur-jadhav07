@@ -1,17 +1,6 @@
 package com.driver;
 
 public class Main {
-    public static void main(String[] args) {
-        // Task 3: Create object of class B and call method meth of class A
-        B objB = new B();
-        String resultFromA = objB.meth();
-        System.out.println(resultFromA);
-
-        // Task 5: Call the overridden method from obj of class B
-        B obj = new B();
-        String resultFromB = obj.meth();
-        System.out.println(resultFromB);
-    }
 
     // Task 1: Create class A with method meth
     public static class A {
@@ -28,6 +17,19 @@ public class Main {
             return "Method is overridden in Extended class B";
         }
     }
+
+    public static void main(String[] args) {
+        // Task 3: Create object of class B and call method meth of class A
+        B objB = new B();
+        String resultFromA = objB.meth();
+        System.out.println(resultFromA);
+
+        // Task 5: Call the overridden method from obj of class B
+        B obj = new B();
+        String resultFromB = obj.meth();
+        System.out.println(resultFromB);
+    }
+
 
 }
 
